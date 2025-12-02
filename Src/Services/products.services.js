@@ -1,5 +1,5 @@
 import {//actualizarProducto, 
-        //agregarProducto, 
+        agregarProducto, 
         eliminarProducto, obtenerProducto, obtenerProductos} from "../Models/products.models.js";
 
 export const addProductService = async (product) => {

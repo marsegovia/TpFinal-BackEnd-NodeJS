@@ -48,7 +48,7 @@ function obtenerProductos(){
 }
 obtenerProductos()
 
-/*
+
 function agregarProducto(producto){
   return(
     new Promise(async (res, rej) => {
@@ -63,7 +63,7 @@ function agregarProducto(producto){
     })
   )
 
-} */
+}
 
 function actualizarProducto(producto){
   return(

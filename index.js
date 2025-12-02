@@ -29,7 +29,6 @@ const corsConfig = {
 app.use(cors(corsConfig));
 //app.use(bodyParser.json());
 app.use(express.json()); // reemplaza body-parser
-app.use('/auth', authRouter);
 
 // Logger: debe ir antes de las rutas
 app.use((req, res, next) => {
@@ -37,7 +36,7 @@ app.use((req, res, next) => {
     next();
 });
 
-
+app.use('/auth', authRouter);
 app.use("/api", productRoutes);
 
 // --------------------------------------
